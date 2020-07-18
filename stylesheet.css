@@ -1,0 +1,137 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+}
+h3{
+  font-size: 50px;
+  text-align: center;
+}
+nav{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+}
+header .f-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 55px;
+  margin: 0 10%;
+  padding: 5px 5px;
+  background-color: white;
+}
+header .f-container li{
+  list-style: none;
+  margin: 0 5%;
+  width: 10%;
+  text-align: center;
+}
+header a{
+  text-decoration: none;
+  color: #BBBBBB;
+}
+nav span{
+  display: block;
+}
+header a:hover{
+  color: red;
+}
+header{
+  background-image: url(画像.jpg);
+  background-size: cover;
+  height: 80vh;
+  padding-top: 120px;
+}
+header h1{
+  font-size: 70px;
+  text-align: center;
+}
+/*ここからプロフィール*/
+.profile{
+  background-color: #CCCCCC;
+  padding: 50px 5% 130px 5%;
+}
+.profile h3{
+  margin: 0 ;
+  padding: 50px 20px;
+}
+.p-content{
+  display: flex;
+  width: 80%;
+  margin: 0 70px;
+}
+.p-pic{
+  width: 30%;
+}
+.profile img{
+  border-radius: 50%;
+}
+/*ここからスキル*/
+.skill{
+  padding: 50px 10px 120px 10px;
+}
+.skill-title{
+  font-size: 30px;
+  white-space: nowrap;
+}
+.skill .f-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.skill-box{
+  border: 1px solid red;
+  width: 28%;
+  height: 230px;
+  margin: 0 4%;
+}
+
+
+/*ここから製作物*/
+.work{
+  background-color: #BBBBBB;
+  padding-bottom: 70px;
+  padding-top: 10px;
+}
+.w-content{
+  display: flex;
+  padding: 0 70px;
+}
+.work img{
+  border-radius: 5px;
+}
+
+/*ここから連絡先*/
+.contact{
+  text-align: center;
+}
+form input{
+  display: block;
+  margin: 20px auto;
+}
+form button{
+  display: block;
+  margin: 0 auto;
+}
+
+/*フッター*/
+footer{
+  text-align: center;
+  margin: 30px 50px 0 50px;
+  padding: 20px 0;
+  border-top: 2px solid #BBBBBB;
+}
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
