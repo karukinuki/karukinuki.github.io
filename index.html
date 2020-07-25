@@ -2,10 +2,12 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,shrink-to-fit=no">
     <title>Inukai's portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -14,26 +16,26 @@
     <header>
       <nav>
         <ul class="f-container">
-          <li>
-            <a href="#profile" class="f-item">
+          <li class="f-item">
+            <a href="#profile">
               <i class="fas fa-address-card fa-2x"></i>
               <span>profile</span>
             </a>
           </li>
-          <li>
-            <a href="#skill" class="f-item">
+          <li class="f-item">
+            <a href="#skill">
               <i class="fas fa-pencil-ruler fa-2x"></i>
               <span>skill</span>
             </a>
           </li>
-          <li>
-            <a href="#work" class="f-item">
+          <li class="f-item">
+            <a href="#work">
               <i class="fas fa-list-alt fa-2x"></i>
-              <span>application</span>
+              <span>work</span>
             </a>
           </li>
-          <li>
-            <a href="#contact" class="f-item">
+          <li class="f-item">
+            <a href="#contact">
               <i class="fas fa-envelope fa-2x"></i>
               <span>contact</span>
             </a>
@@ -41,85 +43,115 @@
         </ul>
       </nav>
       <div class="top">
-        <h1>inukai's portfolio</h1>
+        <h1>Inukai's portfolio</h1>
+        <p class="sub-title">web engineer</p>
       </div>
     </header>
 
     <main>
       <section class="profile" id="profile">
-          <div class="">
-            <h3>プロフィール</h3>
+        <div class="">
+          <h3>プロフィール</h3>
+        </div>
+        <div class="p-content none-m">
+          <div class="p-pic">
+            <img src="profile.jpeg" alt="" width="200" height="200">
           </div>
-          <div class="p-content">
+          <div class="p-text">
+            <p>
+              <ul>
+                <li>名前：犬飼 顕智</li>
+                <li>出身：山梨県</li>
+                <li>実家はお寺。僧侶の資格持ち。</li>
+                <li>東京タワー下の増上寺や、下北沢の個人のお寺でお坊さんをしていました。</li>
+                <li>IT業界は初めての挑戦です。プログラミングを学習しているとバックエンドの方に興味を持ちRailsにてアプリを作成しました。</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="p-content none-l">
+          <div class="p-box">
             <div class="p-pic">
               <img src="profile.jpeg" alt="" width="200" height="200">
             </div>
             <div class="p-text">
-              <p>
-                <ul>
-                  <li>名前：犬飼 顕智</li>
-                  <li>出身：山梨県</li>
-                  <li>実家はお寺。僧侶の資格持ち。東京タワー下の増上寺や、下北沢の個人のお寺でお坊さんとして働いていました。
-                  <li></li>
-                </ul>
-              </p>
+              <ul>
+                <li>名前：犬飼 顕智</li>
+                <li>出身：山梨県</li>
+                <li>　　　実家はお寺。</li>
+                <li>　　　僧侶の資格持ち。</li>
+              </ul>
             </div>
           </div>
+          <p>東京タワー下の増上寺や、下北沢の個人のお寺でお坊さんをしていました。</p>
+          <p>IT業界は初めての挑戦です。プログラミングを学習しているとバックエンドの方に興味を持ちRailsにてアプリを作成しました。</p>
+        </div>
       </section>
       <section class="skill" id="skill">
         <h3>スキル</h3>
-        <div class="skills f-container">
-          <div class="skill-box f-item">
-            <i class="far fa-question-circle fa-4x"></i>
-            <div class="skill-title">HTML CSS JavaScript</div>
-            <p>様々なコードを試し、いくつかのクローンサイトを製作。Bootstrap,jQueryを使ったコーディングも経験済み。</p>
-          </div>
-          <div class="skill-box f-item">
-            <i class="far fa-question-circle fa-4x"></i>
-            <div class="skill-title">Ruby</div>
-            <p>基本的な読み書きが可能。Ruby on Railsにてお寺の檀家さん管理アプリを作成</p>
-          </div>
-          <div class="skill-box f-item">
-            <i class="far fa-question-circle fa-4x"></i>
-            <div class="skill-title">git</div>
-            <p>railsにてお寺の管理者用檀家管理アプリを作成。</p>
+        <div class="skills container">
+          <div class="row">
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-html5 fa-4x"></i>
+              <div class="skill-title">HTML/CSS</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-js fa-4x"></i>
+              <div class="skill-title">Javascript</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-vuejs fa-4x"></i>
+              <div class="skill-title">Vue.js jQuery</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-bootstrap fa-4x"></i>
+              <div class="skill-title">Bootstrap</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-aws fa-4x"></i>
+              <div class="skill-title">AWS<br>Heroku</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-docker fa-4x"></i>
+              <div class="skill-title">Docker</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="fab fa-github-square fa-4x"></i>
+              <div class="skill-title">github</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="far fa-question-circle fa-4x"></i>
+              <div class="skill-title">CircleCI</div>
+            </div>
+            <div class="skill-box col-3 col-md-2">
+              <i class="far fa-question-circle fa-4x"></i>
+              <div class="skill-title">RSpec</div>
+            </div>
           </div>
         </div>
       </section>
       <section class="work" id="work">
         <h3>製作物</h3>
         <div class="w-content">
-          <div class="">
+          <div class="w-img">
             <img src="danka.png" alt="" width="300" height="300">
           </div>
-          <div class="">
-            <p>
-              <ul>
-                <li>danka_web</li>
-                <a href="#">ここにリンクを貼る</a>
-                <ol>お寺の住職が檀家さんを管理するwebアプリです。</ol>
-                <ol>
-                  檀家さんの一覧をパソコン、またはスマートフォンで管理をすることができます。
-                </ol>
-                <ol>
-                  また手作業だった檀家さんへの法事案内も作成でき、打ち間違いなどの間違いを防ぐとともに素早い発送できます。
-                </ol>
-              </ul>
-            </p>
+          <div class="danka">
+            <ul>
+              <li>danka_web</li>
+              <a href="#">ここにリンクを貼る</a>
+            </ul>
+            <ul>
+              <ol>お寺の住職が檀家さんを管理するwebアプリです。</ol>
+              <ol>檀家さんの一覧や詳細をパソコン、またはスマートフォンで管理をすることができます。</ol>
+              <ol>また手作業だった檀家さんへの法事案内も作成でき、打ち間違いなどの間違いを防ぐとともに素早い発送ができます。</ol>
+            </ul>
           </div>
         </div>
       </section>
       <section class="contact" id="contact">
         <h3>連絡先</h3>
-        <div class="form">
-          <form action="GoogleフォームのURL" method="post">
-            <input type="text" name="Googleフォームからコピペ"  placeholder="Your Name">
-            <input type="email" name="Googleフォームからコピペ"  placeholder="Your Email">
-            <input type="text" name="Googleフォームからコピペ"  placeholder="Subject">
-            <textarea name="Googleフォームからコピペ" rows="5" cols="30" placeholder="messages..."></textarea>
-            <button type="submit" name="submit" class="btn btn-info ">Submit</button>
-          </form>
-        </div>
+
       </section>
     </main>
     <footer>
@@ -128,12 +160,15 @@
       </div>
     </footer>
 
-    <script>
+
+    <script class="none-m">
       $(function(){
         $(window).scroll(function(){
           $("nav").stop().animate({"top" : $(window).scrollTop()+20},50);
         });
       });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
